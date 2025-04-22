@@ -1,4 +1,17 @@
+.card
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+}
 
+.title
+{
+    font-size: 2rem;
+    color: grey;
+}
 
 img
 {
@@ -8,4 +21,32 @@ img
     border: solid black 5px;
 }
 
+#skillIcons
+{
+    font-size: 2rem;
+    justify-content: space-between;
+    margin: auto;
+}
 
+#skillBox
+{
+    margin: auto;
+    width: 70%;
+    border-radius: 25px;
+}
+
+#socials
+{
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+    border: solid blue 5px;
+    border-radius: 25px;
+}
+
+#socialIcons
+{
+    font-size: 2rem;
+    justify-content: space-between;
+    margin: auto;
+}
