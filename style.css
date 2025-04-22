@@ -1,70 +1,150 @@
-body
-{
+body {
     font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
-}
-.card
-{
+    max-width: 100%;
+  }
+  
+  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 50%;
-    max-height: 70%;
-    margin: auto;
+    max-width: 60%;
+    margin: 65px auto;
     text-align: center;
-    padding-bottom: 2rem;
-    position: relative;
-    top: 50px;
-    bottom: 50px;
-    background: #FFFFFF ;
-background: linear-gradient(0deg,rgba(255, 255, 255, 1) 70%, rgba(0, 0, 0, 1) 0%);
-}
-
-.title
-{
-    font-size: 2rem;
+    padding-bottom: 2.5rem;
+    position: static;
+    background: #FFFFFF;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 0, 1) 0%);
+  }
+  
+  .title {
+    font-size: 2.5vw;
     color: grey;
-}
-
-h1
-{
-    font-size: 3rem;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
     text-decoration: underline;
-}
-
-img
-{
-    max-width: 30%;
-    max-height: 30%;
+  }
+  
+  img {
+    max-width: 35%;
+    max-height: auto;
     border-radius: 50%;
     border: solid black 5px;
-}
-
-#skillIcons
-{
-    font-size: 2rem;
-    justify-content: space-between;
-    margin: auto;
-}
-
-#skillBox
-{
-    margin: auto;
+  }
+  
+  #skillIcons {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem auto;
     width: 70%;
+  }
+  
+  #skillBox {
+    margin: 1.5rem auto;
+    width: 65%;
     border-radius: 25px;
-}
-
-#socials
-{
-    margin: auto;
-    margin-top: 25px;
-    max-width: 30%;
+    padding: 1.2rem;
+  }
+  
+  #socials {
+    margin: 30px auto;
+    max-width: 40%;
     border: solid black 5px;
     border-radius: 25px;
-    padding-bottom: 5px;
-}
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  
+  #socialIcons {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem auto;
+    width: 50%;
+  }
 
-#socialIcons
-{
-    font-size: 2rem;
-    justify-content: space-between;
+  .aboutMe
+  {
+    max-width: 90%;
     margin: auto;
-    text-decoration: none;
-}
+  }
+  
+  a
+  {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  a:link
+  {
+    color: black;
+  }
+
+  a:visited
+  {
+    color: black;
+  }
+
+  a:hover
+  {
+    color: grey;
+    transform: translateY(-6px);
+  }
+
+  @media screen and (max-width: 800px) {
+    .card 
+    {
+      max-width: 95%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-bottom: 1.5rem;
+      position: static;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 85%, rgba(0, 0, 0, 1) 0%);
+    }
+  
+    .title 
+    {
+      font-size: 4vw;
+    }
+  
+    h1 
+    {
+      font-size: 2.5rem;
+    }
+  
+    img 
+    {
+      max-width: 50%;
+    }
+  
+    #skillIcons 
+    {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+  
+    #skillBox 
+    {
+      width: 90%;
+      padding: 0.75rem;
+    }
+  
+    #socials 
+    {
+      max-width: 80%;
+      margin-top: 15px;
+      padding-bottom: 8px;
+      padding-top: 8px;
+    }
+  
+    #socialIcons 
+    {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+  
+    body 
+    {
+      font-size: 3vw;
+    }
+  }
